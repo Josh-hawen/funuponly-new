@@ -1,0 +1,6 @@
+$ cat .gitignore
+# exclude everything except directory music/
+ /*
+ !/music
+    /music/*
+    !/music/

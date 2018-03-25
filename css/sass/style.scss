@@ -1,0 +1,25 @@
+
+/* Styles for desktop (стили для больших экранов) */
+@media screen and (min-device-width: 1130px) {
+
+	@import "desktop/_base.scss";
+	@import "desktop/_body-slider.scss";
+	@import "desktop/_header.scss";
+	@import "desktop/_menu.scss";
+	@import "desktop/_content.scss";
+	@import "desktop/_footer.scss";
+	
+}
+
+/* Styles for mobile devices (стили для мобильных устройств) */
+
+@media screen and (max-device-width: 1129px) {
+
+	@import "mobile/_base.scss";
+	@import "desktop/_body-slider.scss";
+	@import "mobile/_header.scss";
+	@import "mobile/_menu.scss";
+	@import "mobile/_content.scss";
+	@import "mobile/_footer.scss";
+}
+

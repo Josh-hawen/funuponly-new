@@ -1,0 +1,177 @@
+.container {
+    background: #fff;
+    border: 0.3px solid black;
+    opacity: 0.9;
+    padding: 15px 30px 30px 30px;
+    text-align: justify;
+    width: 40%;
+    margin: 30px auto;
+    height: calc(90vh - 60px);
+    overflow-y: auto;
+    .ct-background {
+        background: url(../img/album-art/title-logo1.png);
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 100px;
+        margin: 0 auto;
+    }
+    p {
+        color: #333;
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
+
+.animation {
+    display: flex;
+    vertical-align: middle;
+    align-content: center; 
+    position: relative;
+    margin-bottom: 30px;
+    content: '';
+    img {
+        width: 100%;
+        height: 100%
+    }
+    .animation-background {
+        animation: progressbar;
+        animation-duration: 10s;
+        animation-timing-function: linear;  
+        background: url(../img/history-bg.png);
+        background-position: left; 
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        height: 100%;
+        width: 100%;
+    }
+}
+    
+@keyframes progressbar {
+    0%  {
+        width: 1%;
+    }
+    25% {
+        width: 25%;
+    }
+    50% {
+        width: 50%;
+    }
+    75% {
+        width: 75%;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+.warning-vpn {
+    position: fixed;
+    bottom: 10vh;
+    right: -50%;
+    border: 2px solid firebrick;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    background: #000;
+    color: #fff;
+    padding: 10px 40px 10px 20px;
+    opacity: 0.8;
+    animation: warningWindow;
+    animation-duration: 30s;
+    animation-delay: 10s;
+    animation-timing-function: linear;  
+    .fa-times {
+        position: absolute;
+        right: 5px;
+        top: 5px;
+        color: firebrick;
+        font-size: 1.5em;
+        transition: 0.5s ease;
+        &:hover {
+            transition: 0.5s ease;
+            transform: rotate(180deg);
+        }
+        &:active {
+            font-size: 1.7em;
+            transition: 0.5s ease;
+        }
+    }
+    .fa-exclamation {
+        float: left;
+        font-size: 3em;
+        color: yellow;
+        transition: 0.5s ease;
+        &:hover {
+            font-size: 3.5em;
+            transition: 0.5s ease;
+        }
+    }
+    .open {
+        right: 0;
+    }
+}
+
+.warning-music {
+    position: fixed;
+    bottom: 30vh;
+    right: -50%;
+    border: 2px solid firebrick;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    background: #000;
+    color: #fff;
+    padding: 10px 40px 10px 20px;
+    opacity: 0.8;
+    animation: warningWindow;
+    animation-duration: 20s;
+    animation-delay: 5s;
+    animation-timing-function: linear;  
+    .fa-times {
+        position: absolute;
+        right: 5px;
+        top: 5px;
+        color: firebrick;
+        font-size: 1.5em;
+        transition: 0.5s ease;
+        &:hover {
+            transition: 0.5s ease;
+            transform: rotate(180deg);
+        }
+        &:active {
+            font-size: 1.7em;
+            transition: 0.5s ease;
+        }
+    }
+    .fa-exclamation {
+        float: left;
+        font-size: 3em;
+        color: yellow;
+        transition: 0.5s ease;
+        margin-right: 20px;
+        &:hover {
+            font-size: 3.5em;
+            transition: 0.5s ease;
+        }
+    }
+    .open {
+        right: 0;
+    }
+}
+
+@keyframes warningWindow {
+    0%  {
+        right: -50%;
+    }
+    5% {
+        right: 0;
+    }
+    95% {
+        right: 0%;
+    }
+    100% {
+        right: -50%;
+    }
+}
+
