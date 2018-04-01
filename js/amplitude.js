@@ -209,13 +209,13 @@ var config = {
  	The user can set the initial volume to a number between 0 and 1
  	overridding a default of .5.
  */
-	volume: .5,
+	volume: .9,
 
 	/*
  	This is set on mute so that when a user un-mutes Amplitude knows
  	what to restore the volume to.
  */
-	pre_mute_volume: .5,
+	pre_mute_volume: .9,
 
 	/*
  	This is an integer between 1 and 100 for how much the volume should
@@ -343,8 +343,8 @@ var AmplitudeHelpers = function () {
 		config.default_album_art = '';
 		config.debug = false;
 		config.handle_song_elements = true;
-		config.volume = .5;
-		config.pre_mute_volume = .5;
+		config.volume = 1;
+		config.pre_mute_volume = 1;
 		config.volume_increment = 5;
 		config.volume_decrement = 5;
 		config.soundcloud_client = '';
@@ -3786,7 +3786,7 @@ var AmplitudeInitializer = function () {
   	Amplitude sets the active song's volume to the volume defined
   	by the user.
   */
-		config.volume = userConfig.volume != undefined ? userConfig.volume : 50;
+		config.volume = userConfig.volume != undefined ? userConfig.volume : 100;
 
 		/*
   	The user can set the volume increment and decrement values between 1 and 100
