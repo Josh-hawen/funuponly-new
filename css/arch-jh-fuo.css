@@ -1,0 +1,172 @@
+body {
+    background: url(../img/bg/apbg.jpg) no-repeat;
+    background-size: cover;
+    background-color: rgba(255, 255, 255, 0.5);
+    height: 100vh;
+}
+
+.container.fun22 {
+    background: url(../img/bg/apbg1.jpg) no-repeat;
+    color: #000;
+    position: fixed;
+    left: -100%;
+    width: 60%;
+    overflow-y: auto;
+    overflow: visible;
+    opacity: 1;
+    border: 0;
+    z-index: 1;
+    transition: all ease 1s;
+    margin: 0;
+    top: 5%;
+    padding: 0;
+}
+
+.container.fun22.active {
+    z-index: 2;
+    left: 20%;
+    display: block;
+    transition: all ease 1s;
+}
+
+.container.fun21p2, .container.fun21p1, .container.fun20, .container.fun19, .container.fun18, .container.fun17, .container.fun16 {
+    background: url(../img/bg/apbg2.jpg) no-repeat;
+    color: #000;
+    position: fixed;
+    right: -100%;
+    width: 60%;
+    overflow-y: auto;
+    overflow: visible;
+    opacity: 1;
+    border: 0;
+    z-index: 1;
+    transition: all ease 1s;
+    margin: 0;
+    top: 5%;
+    padding: 0;
+}
+
+.container.fun20 {
+    background: url(../img/bg/apbg3.jpg) no-repeat;
+}
+
+.container.fun19 {
+    background: url(../img/bg/apbg4.jpg) no-repeat;
+}
+
+.container.fun18 {
+    background: url(../img/bg/apbg5.jpg) no-repeat;
+}
+
+.container.fun17 {
+    background: url(../img/bg/apbg6.jpg) no-repeat;
+}
+
+.container.fun16 {
+    background: url(../img/bg/apbg7.jpg) no-repeat;
+}
+
+.container.fun21p2.active, .container.fun21p1.active, .container.fun20.active, .container.fun19.active, .container.fun18.active, .container.fun17.active, .container.fun16.active {
+    z-index: 2;
+    right: 20%;
+    display: block;
+    transition: all ease 1s;
+}
+
+.container.fun21p2.non-active, .container.fun21p1.non-active, .container.fun20.non-active, .container.fun19.non-active, .container.fun18.non-active, .container.fun17.non-active, .container.non-fun16.active {
+    z-index: 6;
+    right: 140%;
+    transition: all ease 1s;
+}
+
+
+.container .player {
+    margin-bottom: 15px;
+    opacity: 1;
+}
+
+.fun22 h1 {
+    color: #000;
+}
+
+.fun-prev, .fun-next {
+    position: absolute;
+    top: 48%;
+    color: #fff;
+    cursor: pointer;
+    font-size: 3em;
+    height: 60px;
+    line-height: 60px;
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.fun-prev {
+    right: -40px;
+}
+
+.fun-next {
+    left: -40px;
+}
+
+/* --------------------------mobile-styles------------------------------- */
+
+@media screen and (max-device-width: 760px) {
+
+    body {
+        background: url(https://lh3.googleusercontent.com/oxeADC0I-28Yfo8MFkITXegQUtsWFQg8gmvUxgjCqSkfzzhX32fQrirzFo6cO4NWIW4k=h1264);
+        background-size: contain;
+    }
+
+.container.fun22, .container.fun21p2, .container.fun21p1, .container.fun20, .container.fun19, .container.fun18, .container.fun17, .container.fun16 {
+    width: 100%;
+    padding: 0;
+    top: 0;
+    height: 100%;
+    overflow-y: scroll;
+    background-size: cover;
+}
+
+.container.fun22.active {
+    z-index: 2;
+    left: 0%;
+    display: block;
+    transition: all ease 1s;
+}
+
+.container.fun21p2.non-active, .container.fun21p1.non-active, .container.fun20.non-active, .container.fun19.non-active, .container.fun18.non-active, .container.fun17.non-active, .container.non-fun16.active {
+    z-index: 2;
+    right: 100%;
+    transition: all ease 1s;
+}
+
+.container.fun21p2.active, .container.fun21p1.active, .container.fun20.active, .container.fun19.active, .container.fun18.active, .container.fun17.active, .container.fun16.active {
+    z-index: 2;
+    right: 0%;
+    display: block;
+    transition: all ease 1s;
+}
+
+.ct-background {
+    display: none;
+}
+
+.fun-prev, .fun-next {
+    z-index: 3;
+    position: fixed;
+}
+
+.fun-prev {
+    right: 10px;
+}
+
+.fun-next {
+    left: 10px;
+}
+
+.player {
+    margin-top: 0 !important;
+    height: auto !important;
+}
+
+}
+

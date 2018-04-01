@@ -82,7 +82,9 @@ input[type=submit] {
 	border:1px solid #333333;
 	} 
 
-::-webkit-scrollbar { width: 11px; height: 30%; }
+::-webkit-scrollbar { width:6px; height: 6px; }
+
+::-webkit-scrollbar-track {background: #000;}
 
 .only-desctop {
 	display: none;

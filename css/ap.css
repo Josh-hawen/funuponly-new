@@ -53,7 +53,7 @@ header img {
     float: left;
     border: solid 1px black;
     background-color: #2a2a2a;
-    background-size: 25% 100%;
+    background-size: 50% 100%;
     background-position: left;
     background-repeat: no-repeat;
 }
@@ -82,7 +82,7 @@ header img {
 
 .layer:hover, .layer2:hover, .layer3:hover, .layer4:hover, .layer5:hover, .layer6:hover {
     height: 100%;
-    width: 75%;
+    width: 50%;
     transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
     transition-duration: 1.5s;
     z-index: 3;
@@ -135,7 +135,7 @@ header img {
 .header span {text-transform: none; font-size: 16px;}
 
 
-@media screen and (max-device-width: 1130px) {
+@media screen and (max-device-width: 760px) {
 
     .home {
         position: fixed;
@@ -200,9 +200,10 @@ header img {
     .element4 {background-image: url(../img/archpage/jh2.jpg); background-size: 50% 50%; background-position: bottom;}
     .element5 {background-image: url(../img/archpage/db3.jpg); background-size: 50% 50%; background-position: bottom;}
     .element6 {background-image: url(../img/archpage/jh3.jpg); background-size: 50% 50%; background-position: bottom;}
+
+    body {
+        background-color: black;
+        height: auto;
+    }
 }
 
-body {
-    background-color: black;
-    height: auto;
-}

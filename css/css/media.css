@@ -1,7 +1,7 @@
 /*
 Error: File to import not found or unreadable: bourbon/bourbon.
-       Load path: C:/Users/manager/Desktop/new-directory/New directory/css/sass
-        on line 1 of C:\Users\manager\Desktop\new-directory\New directory\css\sass\media.sass
+       Load path: C:/Users/Jhblg/Desktop/Project/funuponly/css/sass
+        on line 1 of C:\Users\Jhblg\Desktop\Project\funuponly\css\sass\media.sass
 
 1: @import "bourbon/bourbon"
 2: 
@@ -11,7 +11,7 @@ Error: File to import not found or unreadable: bourbon/bourbon.
 6: @media only screen and (max-width : 1200px)
 
 Backtrace:
-C:\Users\manager\Desktop\new-directory\New directory\css\sass\media.sass:1
+C:\Users\Jhblg\Desktop\Project\funuponly\css\sass\media.sass:1
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/import_node.rb:67:in `rescue in import'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/import_node.rb:45:in `import'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/import_node.rb:28:in `imported_file'
@@ -35,9 +35,10 @@ C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/bas
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:161:in `visit'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:10:in `visit'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/root_node.rb:36:in `css_tree'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/root_node.rb:20:in `render'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:290:in `render'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:400:in `run'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:307:in `render_with_sourcemap'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:391:in `run'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:63:in `process_result'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:52:in `parse'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:19:in `parse!'
@@ -48,4 +49,4 @@ C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: File to import not found or unreadable: bourbon/bourbon.\A        Load path: C:/Users/manager/Desktop/new-directory/New directory/css/sass\A         on line 1 of C:\Users\manager\Desktop\new-directory\New directory\css\sass\media.sass\A \A 1: @import \"bourbon/bourbon\"\A 2: \A 3: /*==========  Desktop First Method  ==========*/\A 4: \A 5: /* Large Devices, Wide Screens */\A 6: @media only screen and (max-width : 1200px)"; }
+  content: "Error: File to import not found or unreadable: bourbon/bourbon.\A        Load path: C:/Users/Jhblg/Desktop/Project/funuponly/css/sass\A         on line 1 of C:\Users\Jhblg\Desktop\Project\funuponly\css\sass\media.sass\A \A 1: @import \"bourbon/bourbon\"\A 2: \A 3: /*==========  Desktop First Method  ==========*/\A 4: \A 5: /* Large Devices, Wide Screens */\A 6: @media only screen and (max-width : 1200px)"; }
