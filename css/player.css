@@ -165,7 +165,7 @@ div.player:after {
     margin-left: 5%;
     height: auto;
   }
-  div.player {margin-top: 20px; border-bottom: 5px solid dodgerblue;}
+  div.player {margin-top: 20px; border-bottom: 5px solid dodgerblue; height: calc(100vh - 20px);}
   div.comming {display: none;}
   div.player div.meta-container div.control-container {
       padding-bottom: 15px;
