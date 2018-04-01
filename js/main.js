@@ -108,6 +108,29 @@ $('#fun16-next').click(function() {
 	$('.fun16').toggleClass('active');
 }) 
 
+////////////////////////////////////////////////////
+
+$('#slide1-prev').click(function() {
+	$('.slide1').toggleClass('active');  
+	$('.slide2').toggleClass('active');
+}) 
+
+$('#slide2-next').click(function() {
+	$('.slide1').toggleClass('active');  
+	$('.slide2').toggleClass('active');
+}) 
+
+$('#slide2-prev').click(function() { 
+	$('.slide2').toggleClass('active');
+	$('.slide2').toggleClass('non-active');
+	$('.slide3').toggleClass('active');
+}) 
+
+$('#slide3-next').click(function() { 
+	$('.slide2').toggleClass('active');
+	$('.slide2').toggleClass('non-active');
+	$('.slide3').toggleClass('active');
+}) 
 
 
 });

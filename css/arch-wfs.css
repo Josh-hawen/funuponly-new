@@ -1,0 +1,75 @@
+body {
+    background: url(../img/bg/wfsbg.jpg) no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.container.slide1 {
+    background: url(../img/bg/wfsbg1.jpg) no-repeat;
+    color: #000;
+    position: fixed;
+    left: -100%;
+    width: 60%;
+    overflow-y: auto;
+    overflow: visible;
+    opacity: 1;
+    border: 0;
+    z-index: 1;
+    transition: all ease 1s;
+    margin: 0;
+    top: 5%;
+    padding: 0;
+}
+
+.container.slide1.active {
+    z-index: 2;
+    left: 20%;
+    display: block;
+    transition: all ease 1s;
+}
+
+
+.container .player {
+    margin-bottom: 15px;
+    opacity: 1;
+}
+
+
+/* --------------------------mobile-styles------------------------------- */
+
+@media screen and (max-device-width: 760px) {
+
+    body {
+        background: url(../img/bg/wfsbg.jpg) no-repeat;
+        background-size: contain;
+    }
+
+.container.slide1 {
+    width: 100%;
+    padding: 0;
+    top: 0;
+    height: 100%;
+    overflow-y: scroll;
+    background-size: cover;
+}
+
+.container.slide1.active {
+    z-index: 2;
+    left: 0%;
+    display: block;
+    transition: all ease 1s;
+}
+
+
+.ct-background {
+    display: none;
+}
+
+
+.player {
+    margin-top: 0 !important;
+    height: auto !important;
+}
+
+}
+

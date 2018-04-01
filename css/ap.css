@@ -104,6 +104,8 @@ header img {
 
 .layer4 {
     background-image: url(../img/archpage/jhbg2.jpg);
+    border: 2px solid red;
+    cursor: pointer;
 }
 
 .layer5 {
@@ -112,6 +114,8 @@ header img {
 
 .layer6 {
     background-image: url(../img/archpage/jhbg3.jpg);
+    border: 2px solid red;
+    cursor: pointer;
 }
 
 .header {

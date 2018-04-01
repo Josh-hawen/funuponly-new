@@ -11,8 +11,8 @@ body {
     position: fixed;
     left: -100%;
     width: 60%;
-    overflow-y: auto;
-    overflow: visible;
+    overflow-y: visible;
+    overflow-x: visible;
     opacity: 1;
     border: 0;
     z-index: 1;
@@ -35,8 +35,8 @@ body {
     position: fixed;
     right: -100%;
     width: 60%;
-    overflow-y: auto;
-    overflow: visible;
+    overflow-y: visible;
+    overflow-x: visible;
     opacity: 1;
     border: 0;
     z-index: 1;
@@ -85,8 +85,10 @@ body {
     opacity: 1;
 }
 
-.fun22 h1 {
+.fun22 h1, .fun22 h2 {
     color: #000;
+    background: rgba(255, 255, 255, 0.9);
+    margin: 15px;
 }
 
 .fun-prev, .fun-next {
@@ -108,12 +110,59 @@ body {
     left: -40px;
 }
 
+.song-content {
+    width: 100%;
+    height: 350px;
+    overflow: auto;
+}
+
+.song-content p {
+    margin-left: 15px;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.9);
+}
+
+ul {
+    list-style-type: decimal;
+    padding-left: 15px;
+    font-size: 16px;
+}
+
+li {
+    display: block;
+    padding: 20px 70px 20px 20px;
+    background: rgba(255, 255, 255, 0.9);
+    border-bottom: 2px dotted;
+    position: relative;
+    list-style-position: inside;
+    list-style-type: decimal;
+}
+
+li:hover {
+    background: #fff;
+}
+
+li>span {
+    position: absolute;
+    right: 10px;
+    top: 15px;
+    border: 1px solid black;
+    padding: 5px;
+    width: 40px;
+    display: block;
+    text-align: center;
+}
+
+.ct-background {
+    display: none;
+}
+
 /* --------------------------mobile-styles------------------------------- */
 
 @media screen and (max-device-width: 760px) {
 
     body {
-        background: url(https://lh3.googleusercontent.com/oxeADC0I-28Yfo8MFkITXegQUtsWFQg8gmvUxgjCqSkfzzhX32fQrirzFo6cO4NWIW4k=h1264);
+        background: url(../img/bg/apbg.jpg) no-repeat;
         background-size: contain;
     }
 

@@ -65,6 +65,10 @@ input[type=submit] {
 	opacity: 0.85;
 }
 
+ul, li {
+	list-style: none;
+}
+
 .active {display: block;}
 .display {display: block;}
 .hidden {display: none;}

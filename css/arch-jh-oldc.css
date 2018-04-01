@@ -1,0 +1,157 @@
+body {
+    background: url(../img/bg/oldcbg.jpg) no-repeat;
+    background-size: cover;
+    background-color: rgba(255, 255, 255, 0.5);
+    height: 100vh;
+}
+
+.container.slide1 {
+    background: url(../img/bg/oldc-bg1.jpg) no-repeat;
+    background-size: cover;
+    color: #000;
+    position: fixed;
+    left: -100%;
+    width: 60%;
+    overflow-y: auto;
+    overflow: visible;
+    opacity: 1;
+    border: 0;
+    z-index: 1;
+    transition: all ease 1s;
+    margin: 0;
+    top: 5%;
+    padding: 0;
+}
+
+.container.slide1.active {
+    z-index: 2;
+    left: 20%;
+    display: block;
+    transition: all ease 1s;
+}
+
+.container.slide2, .container.slide3 {
+    background: url(../img/bg/oldc-bg2.jpg) no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    color: #000;
+    position: fixed;
+    right: -100%;
+    width: 60%;
+    overflow-y: auto;
+    overflow: visible;
+    opacity: 1;
+    border: 0;
+    z-index: 1;
+    transition: all ease 1s;
+    margin: 0;
+    top: 5%;
+    padding: 0;
+}
+
+.container.slide3 {
+    background: url(../img/bg/oldc-bg3.jpg) no-repeat;
+    background-size: cover;
+}
+
+.container.slide2.active, .container.slide3.active {
+    z-index: 2;
+    right: 20%;
+    display: block;
+    transition: all ease 1s;
+}
+
+.container.slide2.non-active, .container.slide3.non-active {
+    z-index: 6;
+    right: 140%;
+    transition: all ease 1s;
+}
+
+
+.container .player {
+    margin-bottom: 15px;
+    opacity: 1;
+}
+
+
+.slide-prev, .slide-next {
+    position: absolute;
+    top: 48%;
+    color: #fff;
+    cursor: pointer;
+    font-size: 3em;
+    height: 60px;
+    line-height: 60px;
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.slide-prev {
+    right: -40px;
+}
+
+.slide-next {
+    left: -40px;
+}
+
+/* --------------------------mobile-styles------------------------------- */
+
+@media screen and (max-device-width: 760px) {
+
+    body {
+        background: url(../img/bg/oldcbg.jpg) no-repeat;
+        background-size: contain;
+    }
+
+.container.slide1, .container.slide2, .container.slide3 {
+    width: 100%;
+    padding: 0;
+    top: 0;
+    height: 100%;
+    overflow-y: scroll;
+    background-size: cover;
+}
+
+.container.slide1.active {
+    z-index: 2;
+    left: 0%;
+    display: block;
+    transition: all ease 1s;
+}
+
+.container.slide2.non-active, .container.slide3.non-active {
+    z-index: 2;
+    right: 100%;
+    transition: all ease 1s;
+}
+
+.container.slide2.active, .container.slide3.active {
+    z-index: 2;
+    right: 0%;
+    display: block;
+    transition: all ease 1s;
+}
+
+.ct-background {
+    display: none;
+}
+
+.slide-prev, .slide-next {
+    z-index: 3;
+    position: fixed;
+}
+
+.slide-prev {
+    right: 10px;
+}
+
+.slide-next {
+    left: 10px;
+}
+
+.player {
+    margin-top: 0 !important;
+    height: auto !important;
+}
+
+}
+
