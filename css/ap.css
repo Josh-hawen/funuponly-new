@@ -133,3 +133,11 @@ header img {
 .home {position: fixed; left: 30px; top: 15px;}
 .home i {color: #fff; font-size: 3em;}
 .header span {text-transform: none; font-size: 16px;}
+
+
+@media screen and (max-device-width: 1130px) {
+    .element1, .element2, .element3, .element4, .element5, .element6{
+        margin: 2%;
+        width: 96%;
+    }
+}

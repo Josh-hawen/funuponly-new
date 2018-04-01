@@ -36,6 +36,7 @@
     }
     .animation-background {
         animation: progressbar;
+        animation-delay: 5s;
         animation-duration: 10s;
         animation-timing-function: linear;  
         background: url(../img/history-bg.png);
