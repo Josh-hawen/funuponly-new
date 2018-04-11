@@ -8,6 +8,7 @@
     margin: 30px auto;
     height: calc(90vh - 60px);
     overflow-y: auto;
+    position: relative;
     .ct-background {
         background: url(../img/album-art/title-logo1.png);
         background-position: center;
@@ -20,6 +21,27 @@
         color: #333;
         font-size: 16px;
         line-height: 24px;
+    }
+}
+
+.lang-panel {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 15px;
+    span {
+        cursor: pointer;
+        text-decoration: underline;
+        text-decoration-color: #169;
+        padding: 5px;
+        color: #169;
+    }
+    .current-lang {
+        padding: 4px;
+        color: #666;
+        border: 1px solid #666;
+        cursor: auto;
+        text-decoration: none;
     }
 }
 

@@ -24,6 +24,21 @@ $('.fa-times').click(function() {
 	$(this).parent().toggleClass("hidden");
 })
 
+
+$('#ru-lang').click(function() {
+	$('.about-project-eng').addClass("hidden");
+	$('.about-project-rus').removeClass("hidden");
+	$(this).addClass("current-lang");
+	$('#en-lang').removeClass("current-lang");
+})
+
+$('#en-lang').click(function() {
+	$('.about-project-eng').removeClass("hidden");
+	$('.about-project-rus').addClass("hidden");
+	$(this).addClass("current-lang");
+	$('#ru-lang').removeClass("current-lang");
+})
+
 ////////////////////////////////////////////////////
 
 $('#fun22-prev').click(function() {
